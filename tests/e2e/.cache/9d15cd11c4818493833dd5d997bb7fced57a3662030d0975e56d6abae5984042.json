@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T20:04:38.594Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"保存修改\" in \"编辑订单\"",
+        "target": {
+          "role": "button",
+          "name": "保存修改",
+          "within": "编辑订单"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "advance-edit-delete-order.e2e.ts::advance-edit-delete-order",
+      "targetId": "web",
+      "instructionDigest": "a08b2fd3494d1d571de16e0f1b9f03c3e659af6d2bdf40e833bf58611c3f8e47",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Pressed 保存修改 in the 编辑订单 dialog; it closed and the list now shows 日本限定保温杯 with 客户昵称 小林同学, status 已采购, and the advance button reading 国际运输中.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "跨境代购订单管理"
+      },
+      {
+        "text": "汇率"
+      },
+      {
+        "text": "1 USD = 0.048 CNY"
+      },
+      {
+        "role": "button",
+        "name": "Sign in with Internet Identity"
+      },
+      {
+        "role": "heading",
+        "name": "跨境代购订单管理"
+      },
+      {
+        "text": "追踪采购、运输与结算全流程，实时掌握垫付成本与利润。"
+      },
+      {
+        "role": "button",
+        "name": "新增订单"
+      },
+      {
+        "text": "总订单数"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "编辑订单"
+      },
+      {
+        "text": "修改订单信息，保存后列表与概览将同步更新。"
+      },
+      {
+        "text": "*"
+      },
+      {
+        "role": "textbox",
+        "name": "商品名称 *",
+        "placeholder": "例如：日本限定护肤套装",
+        "value": "日本限定保温杯"
+      },
+      {
+        "role": "textbox",
+        "name": "客户昵称 *",
+        "placeholder": "例如：阿狸123",
+        "value": "小林同学"
+      },
+      {
+        "role": "textbox",
+        "name": "外币采购原价 *",
+        "placeholder": "0.00",
+        "value": "100"
+      },
+      {
+        "text": "外币"
+      },
+      {
+        "role": "textbox",
+        "name": "国际运费 *",
+        "placeholder": "0.00",
+        "value": "20"
+      }
+    ],
+    "endWaitMs": 11322,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

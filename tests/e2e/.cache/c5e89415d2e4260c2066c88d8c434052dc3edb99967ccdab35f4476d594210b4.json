@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T20:04:38.595Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"删除订单 日本限定保温杯\" in \"日本限定保温杯\"",
+        "target": {
+          "role": "button",
+          "name": "删除订单 日本限定保温杯",
+          "within": "日本限定保温杯"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"确认删除\"",
+        "target": {
+          "role": "button",
+          "name": "确认删除"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "advance-edit-delete-order.e2e.ts::advance-edit-delete-order",
+      "targetId": "web",
+      "instructionDigest": "2f5b05313566e37b9a540eba2c3e7d129bd8252913e919a914b164a318e92742",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped 删除订单 on the 日本限定保温杯 row, then 确认删除 in the confirmation dialog. The order is gone: list now shows 5 orders (共 5 笔订单) and only 日本限定版保温杯 remains.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "¥5,069.35"
+      },
+      {
+        "text": "¥-539.35"
+      },
+      {
+        "text": "¥4,793.95"
+      },
+      {
+        "text": "共 5 笔订单"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "¥5,094.35"
+      },
+      {
+        "text": "¥-414.35"
+      },
+      {
+        "text": "¥4,818.95"
+      },
+      {
+        "text": "日本限定保温杯"
+      },
+      {
+        "text": "小林同学"
+      },
+      {
+        "role": "cell",
+        "name": "100.00"
+      },
+      {
+        "role": "cell",
+        "name": "¥25.00"
+      },
+      {
+        "role": "cell",
+        "name": "¥20.00"
+      }
+    ],
+    "endWaitMs": 11372,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

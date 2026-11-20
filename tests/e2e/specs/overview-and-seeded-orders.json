@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "overview-and-seeded-orders",
+    "kind": "interactive",
+    "goal": "打开应用即看到概览卡片、汇率栏、新增订单表单与 5 条预置订单，概览数值与列表一致",
+    "requirementIndexes": [
+      0,
+      1,
+      2,
+      11,
+      16
+    ],
+    "acceptanceCriteriaIndexes": [
+      0,
+      1,
+      2,
+      10,
+      11
+    ],
+    "steps": [
+      "Reload the page"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "总订单数"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "总垫付成本"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "预计总利润"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "未结清订单金额"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "汇率设置"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "新增订单"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "待采购"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "已结款"
+      }
+    ]
+  }
+}

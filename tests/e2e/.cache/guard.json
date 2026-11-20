@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "flows": {
+    "add-order-profit-preview": {
+      "plan": [
+        "0192547633003ace",
+        "0564245402a94c5e",
+        "647d07e75ac07a20",
+        "6edbe76ef4de70dd",
+        "907d7a0a0e2b0910",
+        "cd09b7f147198206"
+      ],
+      "last": "passed"
+    },
+    "advance-edit-delete-order": {
+      "plan": [
+        "0ec358c77ce5f668",
+        "43ef995bf07d4346",
+        "f340a7747f3c0040",
+        "f7aa037019f4a2a9"
+      ],
+      "last": "passed"
+    },
+    "filter-by-status-and-customer": {
+      "plan": [
+        "1ea66ceaec08cc17",
+        "7ae5b47845b26b84",
+        "a877985c12b80861",
+        "f340a7747f3c0040"
+      ],
+      "last": "passed"
+    },
+    "overview-and-seeded-orders": {
+      "plan": [
+        "07f76526d6a777c2",
+        "240f1628fd3bbd33",
+        "3255437ed6fdd28f",
+        "36c158eb6f42c9a3",
+        "4083334afc92c2cd",
+        "595ac389d4ed9369",
+        "c3ba478572cd2440",
+        "d169b4fdc2e0f3a7",
+        "f2867127b5304268",
+        "f9608329358aae89"
+      ],
+      "last": "passed"
+    },
+    "persistence-after-reload": {
+      "plan": [
+        "1a8e29c5e639afec",
+        "c3ba478572cd2440",
+        "ecb244539d489de4",
+        "f2867127b5304268"
+      ],
+      "last": "passed"
+    },
+    "rate-change-recalculates": {
+      "plan": [
+        "5a68ceb57e793c8e",
+        "5d4a0b4ecf680bd9",
+        "c5e87a5e88a3f3a0",
+        "da4ed20b25ead2f1",
+        "ecb244539d489de4"
+      ],
+      "last": "passed"
+    }
+  },
+  "order": [
+    "overview-and-seeded-orders",
+    "add-order-profit-preview",
+    "rate-change-recalculates",
+    "filter-by-status-and-customer",
+    "advance-edit-delete-order",
+    "persistence-after-reload"
+  ]
+}

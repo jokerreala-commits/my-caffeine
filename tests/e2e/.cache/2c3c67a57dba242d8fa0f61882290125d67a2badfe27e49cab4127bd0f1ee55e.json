@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T20:04:26.757Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"已签收\" in \"按订单状态筛选\"",
+        "target": {
+          "role": "button",
+          "name": "已签收",
+          "within": "按订单状态筛选"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "filter-by-status-and-customer.e2e.ts::filter-by-status-and-customer",
+      "targetId": "web",
+      "instructionDigest": "d0d2c78c4f39b8f7d36eff559cfaa0ff77ad926954f0c328794d3183b6b4cd2a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped the 已签收 status filter; the list now shows only the 已签收 order (澳洲保健品礼盒, 陈先生) with \"共 1 笔订单（已筛选，全部 6 笔）\" and a 清除筛选 button.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "全部"
+      },
+      {
+        "role": "button",
+        "name": "已签收",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "text": "共 1 笔订单（已筛选，全部 6 笔）"
+      },
+      {
+        "role": "button",
+        "name": "清除筛选"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "全部",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "已签收"
+      },
+      {
+        "text": "日本限定保温杯"
+      },
+      {
+        "text": "小林"
+      },
+      {
+        "role": "cell",
+        "name": "100.00"
+      },
+      {
+        "role": "cell",
+        "name": "¥25.00"
+      },
+      {
+        "role": "cell",
+        "name": "¥20.00"
+      },
+      {
+        "role": "cell",
+        "name": "¥150.00"
+      }
+    ],
+    "endWaitMs": 10837,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

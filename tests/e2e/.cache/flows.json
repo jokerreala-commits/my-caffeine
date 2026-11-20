@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "flows": {
+    "add-order-profit-preview": {
+      "flowId": "add-order-profit-preview",
+      "specDigest": "4857c93d4d08ba3ff7f4a53cdf7bc3d86706bc21c80f7d7b2522ab744c4eda6e",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T20:05:58.612Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "502ad251466be54c04af307723ba953101c0223aaa878eee9077a5d37f43350d.json",
+        "dd3f2797d0314e395c814dba7b2d51a025ae06e66093e7688cc40b1b64deda0c.json",
+        "4b1dd80e5b98469e99b9f4d217a08a8de111b76fe0d618645c5cde17014d8c7d.json"
+      ],
+      "ranAfter": [
+        "overview-and-seeded-orders"
+      ],
+      "ranWith": [
+        "overview-and-seeded-orders"
+      ]
+    },
+    "advance-edit-delete-order": {
+      "flowId": "advance-edit-delete-order",
+      "specDigest": "260c6dda21b213d6f5be2c3f8ce0785a2d5158e1d4c2ff34a5016b1b472f385c",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T20:04:56.082Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "2c044248aa6df6279f40c8c0093e3d247fb6fd3d074e99efed40cd02ddf1694f.json",
+        "5c983daeb1312200945b07319c014cffcb0adca4b5dfdf31ea3093dc717ad954.json",
+        "9d15cd11c4818493833dd5d997bb7fced57a3662030d0975e56d6abae5984042.json",
+        "c5e89415d2e4260c2066c88d8c434052dc3edb99967ccdab35f4476d594210b4.json"
+      ],
+      "ranAfter": [
+        "add-order-profit-preview",
+        "filter-by-status-and-customer",
+        "overview-and-seeded-orders",
+        "rate-change-recalculates"
+      ],
+      "ranWith": [
+        "add-order-profit-preview",
+        "filter-by-status-and-customer",
+        "overview-and-seeded-orders",
+        "rate-change-recalculates"
+      ],
+      "passedTree": "5e5e05eaafb4c5f02231148518f0b5ea0d5e45f3",
+      "visitedPaths": [
+        "/"
+      ]
+    },
+    "filter-by-status-and-customer": {
+      "flowId": "filter-by-status-and-customer",
+      "specDigest": "74e28321db51316581671ec13c9ab9f35b0075006c79adaa80a4f0191e02124a",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T20:04:56.081Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "2c3c67a57dba242d8fa0f61882290125d67a2badfe27e49cab4127bd0f1ee55e.json",
+        "94089c4601d6a04d98b107fe35560ea25297a2a87ce67ae571f6605642d42f13.json"
+      ],
+      "ranAfter": [
+        "add-order-profit-preview",
+        "overview-and-seeded-orders",
+        "rate-change-recalculates"
+      ],
+      "ranWith": [
+        "add-order-profit-preview",
+        "overview-and-seeded-orders",
+        "rate-change-recalculates"
+      ],
+      "passedTree": "5e5e05eaafb4c5f02231148518f0b5ea0d5e45f3",
+      "visitedPaths": [
+        "/"
+      ],
+      "readOnly": true
+    },
+    "overview-and-seeded-orders": {
+      "flowId": "overview-and-seeded-orders",
+      "specDigest": "fe986899079ce8e1bce29aa3211f32b7bda9f420e0daafed82e54a303228dc6a",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T20:05:58.612Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [],
+      "ranAfter": [],
+      "ranWith": [],
+      "readOnly": true
+    },
+    "persistence-after-reload": {
+      "flowId": "persistence-after-reload",
+      "specDigest": "8b2787a8abe596c54983d6bcaabebaee27f15e36db1a9910b2c9079a5b439702",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T20:05:58.613Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [],
+      "ranAfter": [
+        "add-order-profit-preview",
+        "advance-edit-delete-order",
+        "filter-by-status-and-customer",
+        "overview-and-seeded-orders",
+        "rate-change-recalculates"
+      ],
+      "ranWith": [
+        "add-order-profit-preview",
+        "advance-edit-delete-order",
+        "filter-by-status-and-customer",
+        "overview-and-seeded-orders",
+        "rate-change-recalculates"
+      ],
+      "readOnly": true
+    },
+    "rate-change-recalculates": {
+      "flowId": "rate-change-recalculates",
+      "specDigest": "a063fdafac0f8994e8946729cf6fe6b67c089457a4c186354e1d16df2798dc2f",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T20:04:56.080Z",
+      "recordedBy": "deepseek-v4.1-flash",
+      "entries": [
+        "10122993dac0675d47588e52f267415e4bc6bfa8297c55bdf312e613df538f15.json"
+      ],
+      "ranAfter": [
+        "add-order-profit-preview",
+        "overview-and-seeded-orders"
+      ],
+      "ranWith": [
+        "add-order-profit-preview",
+        "overview-and-seeded-orders"
+      ],
+      "passedTree": "5e5e05eaafb4c5f02231148518f0b5ea0d5e45f3",
+      "visitedPaths": [
+        "/"
+      ]
+    }
+  }
+}

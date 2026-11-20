@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T20:04:26.758Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"小林\" into searchbox \"搜索客户昵称\" in \"订单列表\"",
+        "target": {
+          "role": "searchbox",
+          "name": "搜索客户昵称",
+          "placeholder": "搜索客户昵称",
+          "within": "订单列表"
+        },
+        "value": "小林"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "filter-by-status-and-customer.e2e.ts::filter-by-status-and-customer",
+      "targetId": "web",
+      "instructionDigest": "3aa20884ec28a8f319c2b688c317d859f9abe821ec6bf7bffeaaf6ba6b67e89c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Typed 小林 into the 搜索客户昵称 search box. With the 已签收 status filter still active, the list shows \"没有匹配的订单\" and a 清除搜索 button; the search was applied.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "searchbox",
+        "name": "搜索客户昵称",
+        "placeholder": "搜索客户昵称",
+        "value": "小林"
+      },
+      {
+        "role": "button",
+        "name": "清除搜索"
+      },
+      {
+        "text": "没有匹配的订单"
+      },
+      {
+        "text": "尝试调整状态或客户昵称筛选条件。"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "searchbox",
+        "name": "搜索客户昵称",
+        "placeholder": "搜索客户昵称"
+      },
+      {
+        "role": "columnheader",
+        "name": "商品名称"
+      },
+      {
+        "role": "columnheader",
+        "name": "客户昵称"
+      },
+      {
+        "role": "columnheader",
+        "name": "外币原价"
+      },
+      {
+        "role": "columnheader",
+        "name": "人民币成本"
+      },
+      {
+        "role": "columnheader",
+        "name": "国际运费"
+      },
+      {
+        "role": "columnheader",
+        "name": "国内报价"
+      },
+      {
+        "role": "columnheader",
+        "name": "净利润"
+      }
+    ],
+    "endWaitMs": 10910,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

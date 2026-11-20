@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "add-order-profit-preview",
+    "kind": "interactive",
+    "goal": "新增订单表单按当前汇率实时显示人民币成本、单笔净利润与利润率，保存后列表与概览同步更新",
+    "requirementIndexes": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "acceptanceCriteriaIndexes": [
+      4,
+      5
+    ],
+    "steps": [
+      "Press 新增订单",
+      "Add an order titled 日本限定保温杯 for customer 小林 with foreign price 100, shipping 20 and quote 150",
+      "Press 保存"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "商品名称"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "客户昵称"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "外币采购原价"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "国际运费"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "国内报价"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "订单状态"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "日本限定保温杯"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "125.20"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "83.5%"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "日本限定保温杯"
+      }
+    ]
+  }
+}

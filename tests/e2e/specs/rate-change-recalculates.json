@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "rate-change-recalculates",
+    "kind": "interactive",
+    "goal": "把汇率从 0.048 改为 0.05 并保存后，未结清订单的人民币成本与概览数值同步重算",
+    "requirementIndexes": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "acceptanceCriteriaIndexes": [
+      3
+    ],
+    "steps": [
+      "Set the exchange rate to 0.05 and press 保存汇率"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "0.05"
+      }
+    ]
+  }
+}

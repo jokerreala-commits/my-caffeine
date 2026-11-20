@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "filter-by-status-and-customer",
+    "kind": "interactive",
+    "goal": "按订单状态与客户昵称叠加筛选，结果同时满足两个条件，并可清除筛选",
+    "requirementIndexes": [
+      12,
+      13,
+      15
+    ],
+    "acceptanceCriteriaIndexes": [
+      6
+    ],
+    "steps": [
+      "Filter the order list by status 已签收",
+      "Search the order list for customer 小林"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "已签收"
+      },
+      {
+        "afterStep": 1,
+        "assert": "The screen shows \"小林\""
+      }
+    ]
+  }
+}

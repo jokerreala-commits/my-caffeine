@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T20:04:38.592Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"编辑订单 日本限定保温杯\" in \"日本限定保温杯\"",
+        "target": {
+          "role": "button",
+          "name": "编辑订单 日本限定保温杯",
+          "within": "日本限定保温杯"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"小林同学\" into textbox \"客户昵称 *\" in \"编辑订单\"",
+        "target": {
+          "role": "textbox",
+          "name": "客户昵称 *",
+          "placeholder": "例如：阿狸123",
+          "within": "编辑订单"
+        },
+        "value": "小林同学"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "advance-edit-delete-order.e2e.ts::advance-edit-delete-order",
+      "targetId": "web",
+      "instructionDigest": "8a8262795d538aa5dd30969f43bd10d3372870119ca78dbbc0313ebc5a4eed24",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Opened the 编辑订单 dialog for 日本限定保温杯 and changed the 客户昵称 field from 小林 to 小林同学. The dialog is still open with 保存修改 not yet pressed, as instructed.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "编辑订单"
+      },
+      {
+        "text": "修改订单信息，保存后列表与概览将同步更新。"
+      },
+      {
+        "text": "*"
+      },
+      {
+        "role": "textbox",
+        "name": "商品名称 *",
+        "placeholder": "例如：日本限定护肤套装",
+        "value": "日本限定保温杯"
+      },
+      {
+        "role": "textbox",
+        "name": "客户昵称 *",
+        "placeholder": "例如：阿狸123",
+        "value": "小林同学"
+      },
+      {
+        "role": "textbox",
+        "name": "外币采购原价 *",
+        "placeholder": "0.00",
+        "value": "100"
+      },
+      {
+        "text": "外币"
+      },
+      {
+        "role": "textbox",
+        "name": "国际运费 *",
+        "placeholder": "0.00",
+        "value": "20"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "跨境代购订单管理"
+      },
+      {
+        "text": "汇率"
+      },
+      {
+        "text": "1 USD = 0.048 CNY"
+      },
+      {
+        "role": "button",
+        "name": "Sign in with Internet Identity"
+      },
+      {
+        "role": "heading",
+        "name": "跨境代购订单管理"
+      },
+      {
+        "text": "追踪采购、运输与结算全流程，实时掌握垫付成本与利润。"
+      },
+      {
+        "role": "button",
+        "name": "新增订单"
+      },
+      {
+        "text": "总订单数"
+      }
+    ],
+    "endWaitMs": 10702,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

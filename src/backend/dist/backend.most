@@ -1,0 +1,77 @@
+// Version: 4.0.0
+type AccessControlState__201339279 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__175655829<Principal, UserRole__91647283>
+  };
+type Data__1061330525<K, V> =
+  {var count : Nat__565224867; kvs : [var ?(K, V)]};
+type Internal__1060388275<K, V> =
+  {children : [var ?Node__1010487028<K, V>]; data : Data__1061330525<K, V>};
+type Leaf__8515789<K, V> = {data : Data__1061330525<K, V>};
+type Map__175655829<K, V> = Map__975833162<K, V>;
+type Map__925935234<K, V> =
+  {var root : Node__1010487028<K, V>; var size : Nat__565224867};
+type Map__975833162<K, V> = Map__925935234<K, V>;
+type Nat__565224867 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NewActor__769816496 =
+  {
+    accessControlState : AccessControlState__201339279;
+    nextIdState : {var nextId : Nat};
+    orders : Map__175655829<Nat, Order__129485232>;
+    rateState : {var rate : Float}
+  };
+type Node__1010487028<K, V> =
+  {#internal : Internal__1060388275<K, V>; #leaf : Leaf__8515789<K, V>};
+type OldActor__512397517 = {};
+type OrderId__197865225 = Nat;
+type OrderId__521176343 = OrderId__197865225;
+type OrderStatus__272730104 =
+  {#delivered; #inTransit; #pendingPurchase; #purchased; #settled};
+type OrderStatus__356809266 =
+  {#delivered; #inTransit; #pendingPurchase; #purchased; #settled};
+type Order__129485232 =
+  {
+    createdAt : Int;
+    customerNickname : Text;
+    foreignPrice : Float;
+    id : Nat;
+    productName : Text;
+    quoteCny : Float;
+    settledRate : ?Float;
+    shippingFeeCny : Float;
+    status : OrderStatus__356809266
+  };
+type Order__141779993 =
+  {
+    createdAt : Timestamp__813860109;
+    customerNickname : Text;
+    foreignPrice : Float;
+    id : OrderId__521176343;
+    productName : Text;
+    quoteCny : Float;
+    settledRate : ?Float;
+    shippingFeeCny : Float;
+    status : OrderStatus__272730104
+  };
+type Timestamp__301639476 = Int;
+type Timestamp__813860109 = Timestamp__301639476;
+type UserRole__91647283 = {#admin; #guest; #user};
+{
+  "00000000_000000" : OldActor__512397517 -> NewActor__769816496
+}
+actor  {
+  stable accessControlState :
+    {
+      var adminAssigned : Bool;
+      userRoles : Map__175655829<Principal, UserRole__91647283>
+    };
+  stable nextIdState : {var nextId : OrderId__521176343};
+  stable orders :
+    {
+      var root : Node__1010487028<OrderId__521176343, Order__141779993>;
+      var size : Nat__565224867
+    };
+  stable rateState : {var rate : Float}
+};

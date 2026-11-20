@@ -1,0 +1,117 @@
+type Value = 
+ variant {
+   "bool": bool;
+   float: float64;
+   "int": int;
+   "nat": nat;
+   "null";
+   "text": text;
+ };
+type UserRole = 
+ variant {
+   admin;
+   guest;
+   user;
+ };
+type Timestamp = int;
+type Result__1 = 
+ variant {
+   err: Error;
+   ok;
+ };
+type Result = 
+ record {
+   hasMore: bool;
+   rows: vec vec Cell;
+ };
+type OverviewStats = 
+ record {
+   totalCostCny: float64;
+   totalOrders: nat;
+   totalProfitCny: float64;
+   unsettledAmountCny: float64;
+ };
+type OrderStatus = 
+ variant {
+   delivered;
+   inTransit;
+   pendingPurchase;
+   purchased;
+   settled;
+ };
+type OrderInput = 
+ record {
+   customerNickname: text;
+   foreignPrice: float64;
+   productName: text;
+   quoteCny: float64;
+   shippingFeeCny: float64;
+   status: OrderStatus;
+ };
+type OrderId = nat;
+type Order = 
+ record {
+   createdAt: Timestamp;
+   customerNickname: text;
+   foreignPrice: float64;
+   id: OrderId;
+   productName: text;
+   quoteCny: float64;
+   settledRate: opt float64;
+   shippingFeeCny: float64;
+   status: OrderStatus;
+ };
+type Error = 
+ variant {
+   AmbiguousAttribute: record {
+                         field: text;
+                         sources: vec text;
+                       };
+   FrontendOriginMismatch: record {
+                             expected: vec text;
+                             got: text;
+                           };
+   FrontendOriginsNotConfigured;
+   MalformedCandid;
+   MissingField: text;
+   MixedSsoSources: record {
+                      otherKeys: vec text;
+                      ssoKeys: vec text;
+                    };
+   NoAttributes;
+   Stale: record {ageNs: nat;};
+   UnknownNonce;
+   UntrustedSsoSource: record {domain: text;};
+ };
+type Cell = 
+ record {
+   name: text;
+   value: Value;
+ };
+service : {
+  _initialize_access_control: () -> ();
+  _internet_identity_sign_in_finish: () -> (Result__1);
+  _internet_identity_sign_in_start: () -> (blob);
+  /// Advance an order to the next status.
+  advanceOrderStatus: (id: OrderId) -> (OrderStatus);
+  assignCallerUserRole: (user: principal, role: UserRole) -> ();
+  /// Create a new order and return its id.
+  createOrder: (input: OrderInput) -> (OrderId);
+  /// Delete an order.
+  deleteOrder: (id: OrderId) -> ();
+  execute: (qJson: text) -> (Result) query;
+  getApiDoc: () -> (text) query;
+  getCallerUserRole: () -> (UserRole) query;
+  /// Read the current exchange rate.
+  getExchangeRate: () -> (float64) query;
+  /// Read aggregate overview statistics.
+  getOverviewStats: () -> (OverviewStats) query;
+  isCallerAdmin: () -> (bool) query;
+  /// List all orders.
+  listOrders: () -> (vec Order) query;
+  schema: () -> (text) query;
+  /// Save a new exchange rate.
+  setExchangeRate: (rate: float64) -> ();
+  /// Edit an existing order.
+  updateOrder: (id: OrderId, input: OrderInput) -> ();
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T20:04:15.615Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"新增订单\"",
+        "target": {
+          "role": "button",
+          "name": "新增订单"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "add-order-profit-preview.e2e.ts::add-order-profit-preview",
+      "targetId": "web",
+      "instructionDigest": "d637ae48ab675cdce808d774247e6c54118fdc8bb49972bd92f5c780ba61e4ba",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Pressed 新增订单; the 新增订单 dialog opened with fields 商品名称, 客户昵称, 外币采购原价, 国际运费, 国内报价, 订单状态 (待采购), live profit preview, and 取消/创建订单 buttons.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "新增订单"
+      },
+      {
+        "text": "填写代购订单信息，成本与利润会按当前汇率实时计算。"
+      },
+      {
+        "text": "*"
+      },
+      {
+        "role": "textbox",
+        "name": "商品名称 *",
+        "placeholder": "例如：日本限定护肤套装"
+      },
+      {
+        "role": "textbox",
+        "name": "客户昵称 *",
+        "placeholder": "例如：阿狸123"
+      },
+      {
+        "role": "textbox",
+        "name": "外币采购原价 *",
+        "placeholder": "0.00"
+      },
+      {
+        "text": "外币"
+      },
+      {
+        "role": "textbox",
+        "name": "国际运费 *",
+        "placeholder": "0.00"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "跨境代购订单管理"
+      },
+      {
+        "text": "汇率"
+      },
+      {
+        "text": "1 USD = 0.048 CNY"
+      },
+      {
+        "role": "button",
+        "name": "Sign in with Internet Identity"
+      },
+      {
+        "role": "heading",
+        "name": "跨境代购订单管理"
+      },
+      {
+        "text": "追踪采购、运输与结算全流程，实时掌握垫付成本与利润。"
+      },
+      {
+        "role": "button",
+        "name": "新增订单"
+      },
+      {
+        "text": "总订单数"
+      }
+    ],
+    "endWaitMs": 10823,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

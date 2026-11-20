@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T20:04:38.590Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"已采购\" in \"日本限定保温杯\"",
+        "target": {
+          "role": "button",
+          "name": "已采购",
+          "within": "日本限定保温杯"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "advance-edit-delete-order.e2e.ts::advance-edit-delete-order",
+      "targetId": "web",
+      "instructionDigest": "a2abd2e7a3283c83f5c2574ece224a9149314a820308428d36805c450e972f24",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Tapped the status advance button on the 日本限定保温杯 row; its status moved from 待采购 to 已采购 and the advance button now reads 国际运输中.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "row",
+        "name": "日本限定保温杯 小林 100.00 ¥25.00 ¥20.00 ¥150.00 +¥125.00 83.3% 已采购 国际运输中 编辑订单 日本限定保温杯 删除订单 日本限定保温杯"
+      },
+      {
+        "role": "cell",
+        "name": "国际运输中 编辑订单 日本限定保温杯 删除订单 日本限定保温杯"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "row",
+        "name": "日本限定保温杯 小林 100.00 ¥25.00 ¥20.00 ¥150.00 +¥125.00 83.3% 待采购 已采购 编辑订单 日本限定保温杯 删除订单 日本限定保温杯"
+      },
+      {
+        "role": "cell",
+        "name": "已采购 编辑订单 日本限定保温杯 删除订单 日本限定保温杯"
+      }
+    ],
+    "endWaitMs": 11494,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

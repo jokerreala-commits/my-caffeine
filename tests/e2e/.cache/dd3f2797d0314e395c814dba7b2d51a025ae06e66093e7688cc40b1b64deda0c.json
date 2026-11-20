@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T20:04:15.617Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"日本限定保温杯\" into textbox \"商品名称 *\" in \"新增订单\"",
+        "target": {
+          "role": "textbox",
+          "name": "商品名称 *",
+          "placeholder": "例如：日本限定护肤套装",
+          "within": "新增订单"
+        },
+        "value": "日本限定保温杯"
+      },
+      {
+        "name": "type",
+        "summary": "type \"小林\" into textbox \"客户昵称 *\" in \"新增订单\"",
+        "target": {
+          "role": "textbox",
+          "name": "客户昵称 *",
+          "placeholder": "例如：阿狸123",
+          "within": "新增订单"
+        },
+        "value": "小林"
+      },
+      {
+        "name": "type",
+        "summary": "type \"100\" into textbox \"外币采购原价 *\" in \"新增订单\"",
+        "target": {
+          "role": "textbox",
+          "name": "外币采购原价 *",
+          "placeholder": "0.00",
+          "within": "新增订单"
+        },
+        "value": "100"
+      },
+      {
+        "name": "type",
+        "summary": "type \"20\" into textbox \"国际运费 *\" in \"新增订单\"",
+        "target": {
+          "role": "textbox",
+          "name": "国际运费 *",
+          "placeholder": "0.00",
+          "within": "新增订单"
+        },
+        "value": "20"
+      },
+      {
+        "name": "type",
+        "summary": "type \"150\" into textbox \"国内报价 *\" in \"新增订单\"",
+        "target": {
+          "role": "textbox",
+          "name": "国内报价 *",
+          "placeholder": "0.00",
+          "within": "新增订单"
+        },
+        "value": "150"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "add-order-profit-preview.e2e.ts::add-order-profit-preview",
+      "targetId": "web",
+      "instructionDigest": "2566949a692eebefe850b59f8ca8469ae8c6eaa910e0df05f58b9d7ef195cbee",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "caffeine-inference.chat",
+      "model": "deepseek-v4.1-flash"
+    },
+    "summary": "Filled the 新增订单 dialog: 商品名称=日本限定保温杯, 客户昵称=小林, 外币采购原价=100, 国际运费=20, 国内报价=150. Live preview updated: 人民币采购成本 ¥24.80, 单笔净利润 ¥125.20, 利润率 83.5%. Dialog still open; 保存 not pressed.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "商品名称 *",
+        "placeholder": "例如：日本限定护肤套装",
+        "value": "日本限定保温杯"
+      },
+      {
+        "role": "textbox",
+        "name": "客户昵称 *",
+        "placeholder": "例如：阿狸123",
+        "value": "小林"
+      },
+      {
+        "role": "textbox",
+        "name": "外币采购原价 *",
+        "placeholder": "0.00",
+        "value": "100"
+      },
+      {
+        "role": "textbox",
+        "name": "国际运费 *",
+        "placeholder": "0.00",
+        "value": "20"
+      },
+      {
+        "role": "textbox",
+        "name": "国内报价 *",
+        "placeholder": "0.00",
+        "value": "150"
+      },
+      {
+        "text": "¥24.80"
+      },
+      {
+        "text": "¥125.20"
+      },
+      {
+        "text": "83.5%"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "textbox",
+        "name": "商品名称 *",
+        "placeholder": "例如：日本限定护肤套装"
+      },
+      {
+        "role": "textbox",
+        "name": "客户昵称 *",
+        "placeholder": "例如：阿狸123"
+      },
+      {
+        "role": "textbox",
+        "name": "外币采购原价 *",
+        "placeholder": "0.00"
+      },
+      {
+        "role": "textbox",
+        "name": "国际运费 *",
+        "placeholder": "0.00"
+      },
+      {
+        "role": "textbox",
+        "name": "国内报价 *",
+        "placeholder": "0.00"
+      },
+      {
+        "text": "¥0.00"
+      },
+      {
+        "text": "0.0%"
+      }
+    ],
+    "endWaitMs": 10954,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

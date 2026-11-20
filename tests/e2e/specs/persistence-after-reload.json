@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "persistence-after-reload",
+    "kind": "interactive",
+    "goal": "刷新页面后订单数据与汇率设置保持",
+    "requirementIndexes": [
+      0,
+      1,
+      3
+    ],
+    "acceptanceCriteriaIndexes": [
+      9
+    ],
+    "steps": [
+      "Reload the page"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "跨境代购订单管理"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "0.0500"
+      }
+    ]
+  }
+}

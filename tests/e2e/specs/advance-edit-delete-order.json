@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "advance-edit-delete-order",
+    "kind": "interactive",
+    "goal": "一键推进订单状态、编辑订单并删除订单，列表与概览卡片同步更新",
+    "requirementIndexes": [
+      13,
+      14
+    ],
+    "acceptanceCriteriaIndexes": [
+      7,
+      8
+    ],
+    "steps": [
+      "Advance the status of the order titled 日本限定保温杯",
+      "Edit the order titled 日本限定保温杯 and change the customer nickname to 小林同学",
+      "Press 保存",
+      "Delete the order titled 日本限定保温杯 and confirm"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "已采购"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "小林同学"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "小林同学"
+      },
+      {
+        "afterStep": 3,
+        "expectNoText": "日本限定保温杯"
+      }
+    ]
+  }
+}
